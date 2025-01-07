@@ -95,6 +95,8 @@
             clip-rule="evenodd"
             d="M12.0001 3.75317L21.5509 20.2501H2.44922L12.0001 3.75317ZM5.05089 18.7501H18.9492L12.0001 6.74697L5.05089 18.7501Z"
             fill="currentColor"
+            stroke="currentColor"
+            stroke-width="2"
           ></path>
         </g>
       </symbol>
@@ -102,7 +104,7 @@
     <div class="gallery">
       <aside class="sidebar">
         <div class="sidebar__menu">
-          <div class="logo">
+          <div class="sidebar__logo">
             <svg class="icon icon--30">
               <use xlink:href="#triangle"></use>
             </svg>
@@ -118,7 +120,7 @@
                 <use xlink:href="#heart"></use>
               </svg>
             </button>
-            <button class="sidebar__btn" type="button">
+            <button class="sidebar__btn sidebar__btn--active" type="button">
               <svg class="icon icon--30">
                 <use xlink:href="#grid"></use>
               </svg>
@@ -130,9 +132,9 @@
             </button>
           </div>
         </div>
-        <div class="sidebar__avatar">
-          <img src="./src/img/avatar.jpg" alt="avatar" />
-        </div>
+        <a href="#!" class="sidebar__link">
+          <img class="sidebar__img" src="./src/img/avatar.jpg" alt="avatar" />
+        </a>
       </aside>
       <div class="gallery__content">
         <h2 class="gallery__total">29.309 images</h2>
@@ -159,5 +161,6 @@
         </div>
       </div>
     </div>
+    <script src="./src/script.js" type="module"></script>
   </body>
 </html>
